@@ -73,6 +73,8 @@ ZSH_THEME="candy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+HISTSIZE=100000
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
