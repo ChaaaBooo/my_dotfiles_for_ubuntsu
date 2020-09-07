@@ -106,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 
 # alius
 alias relogin='exec $SHELL -l'
-alias rezsh='source .zshrc'
+alias rzsh='source .zshrc'
 
 alias ls='ls -l'
 alias la="ls -a"
