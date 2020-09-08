@@ -73,7 +73,20 @@ ZSH_THEME="candy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-HISTSIZE=100000
+#ヒストリーサイズ設定
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+PATH=${PATH}:~/bin
+
+#ヒストリの一覧を読みやすい形に変更
+HISTTIMEFORMAT="[%Y/%M/%D %H:%M:%S]"
+
+# 入力したコマンドがすでにコマンド履歴に含まれる場合、履歴から古いほうのコマンドを削除する
+setopt hist_ignore_all_dups
+
+# ヒストリーに重複を表示しない
+setopt histignorealldups
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,6 +116,35 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# 補完機能を有効にする
+autoload -Uz compinit
+compinit -u
+if [ -e /usr/local/share/zsh-completions ]; then
+  fpath=(/usr/local/share/zsh-completions $fpath)
+fi
+
+# 補完で小文字でも大文字にマッチさせる
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+# 補完候補を詰めて表示
+setopt list_packed
+
+#補完のリストの、選択している部分を塗りつぶす
+zstyle ':completion:*' menu select
+
+#補完でカラーを使用する
+autoload -Uz colors
+colors
+zstyle ':completion:*' list-colors "${LS_COLORS}"
+
+# コマンドがスペースで始まる場合、コマンド履歴に追加しない
+# 例： <Space>echo hello と入力
+setopt hist_ignore_space
+
+# コマンドのスペルを訂正
+setopt correct
+# ビープ音を鳴らさない
+setopt no_beep
 
 # alius
 alias relogin='exec $SHELL -l'
