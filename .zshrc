@@ -156,3 +156,5 @@ alias la="ls -a"
 alias gitb='git branch'
 alias gitc='git checkout'
 alias gits='git status'
+
+alias here="explorer.exe ."
