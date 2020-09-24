@@ -1,2 +1,2 @@
-export PATH="$HOME/.anyenv/bin:$PATH"
+export PATH=${PATH}:${HOME}/.anyenv/bin
 eval "$(anyenv init -)"

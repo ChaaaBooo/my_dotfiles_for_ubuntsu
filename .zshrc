@@ -158,3 +158,6 @@ alias gitc='git checkout'
 alias gits='git status'
 
 alias here="explorer.exe ."
+
+export PATH=${PATH}:${HOME}/.anyenv/bin
+eval "$(anyenv init -)"
