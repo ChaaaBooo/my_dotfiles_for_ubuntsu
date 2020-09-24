@@ -10,7 +10,6 @@
 !/.zshrc
 !/.zshenv
 !/.zsh_profile
-!/.zsh_history
 !/.zfunc/
 /.zfunc/**  # ディレクトリは管理したいけど中身はいらないときはこんな感じ
 !/.zsh/
