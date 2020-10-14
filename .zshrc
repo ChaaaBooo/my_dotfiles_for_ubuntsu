@@ -156,6 +156,11 @@ alias la="ls -a"
 alias gitb='git branch'
 alias gitc='git checkout'
 alias gits='git status'
+alias gitfp='git fetch --prune'
+
+alias dc='docker-compose'
+alias dcup='docker-compose up'
+alias dcst='docker-compose stop'
 
 alias here="explorer.exe ."
 
