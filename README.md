@@ -4,6 +4,18 @@
 
 本リポジトリはLinux、WSL環境におけるdotfiles管理についてまとめたものである
 
+## WSL設定関連
+
+- Windows Terminal + WSLでターミナル起動時のディレクトリをホームディレクトリにする
+https://ryotatake.hatenablog.com/entry/2019/08/15/windows_terminal_wsl
+
+- Windows TerminalでWSL(2)で起動するLinuxのホームディレクトリを変更する
+https://level69.net/archives/27578
+
+- Windows Terminal Tips
+https://qiita.com/whim0321/items/6a6b11dea54642bd6724
+※defaultのログインシェル変更時に使用
+
 ## 参考記事
 
 - ようこそdotfilesの世界へ
