@@ -16,6 +16,9 @@ https://level69.net/archives/27578
 https://qiita.com/whim0321/items/6a6b11dea54642bd6724
 ※defaultのログインシェル変更時に使用
 
+- Windows Terminalで背景色を透明にする
+https://wonwon-eater.com/windows-terminal-acrylic/
+
 ## 参考記事
 
 - ようこそdotfilesの世界へ
